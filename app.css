@@ -1,3 +1,19 @@
-h1{
-  color: blue;
+/* 
+  Colors:
+  Primary: #89A1EF (Cornflower Blue)
+  Secondary: #00A5E0 (Carolina Blue), #EF9CDA (Orchid Crayola)
+  Tertiary: #32CBFF (Vivid Sky), #FECEF1 (Pink Lace)
+*/
+
+*, *::after, *::before{
+  box-sizing: border-box;
 }
+
+html{
+  font-family: sans-serif;
+}
+
+body{
+  margin: 0;
+}
+
