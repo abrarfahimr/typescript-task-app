@@ -16,15 +16,15 @@
   <main class="project">
     <form class="project__form">
       <div class="project__title">
-        <label for="title">Title</label>
+        <label for="title" class="project__label">Title</label>
         <input type="text" id="title"/>
       </div>
       <div class="project__description">
-        <label for="description">description</label>
+        <label for="description" class="project__label">Description</label>
         <textarea id="description" rows="3"></textarea>
       </div>
       <div class="project__group">
-        <label for="teams">Teams</label>
+        <label for="teams" class="project__label">Teams</label>
         <select id="teams" name="Teams">
           <option value="Brian's SWE Team">Brian's SWE Team</option>
           <option value="John's UX Team">John's UX Team</option>
@@ -32,15 +32,18 @@
           <option value="Racheal's Data Science Team">Racheal's Data Science Team</option>
         </select>
       </div>
-      <button type="submit" class="project__button">Add Project</button>
+      <div class="project__buttoncontainer">
+        <button type="submit" class="project__button">Add Project</button>
+      </div>
+     
     </form>
   </main>
 
   <!-- Project list -->
   <section class="list">
-    <h2 class="list__header">Project List</h2>
+    <h2 class="list__header1">Project List</h2>
     <div class="list__single">
-      <li draggable="true">
+      <li draggable="true" class="list__ul">
         <h3 class="list__title"></h3>
         <p class="list__description"></p>
         <p class="list__team"></p>
@@ -50,9 +53,9 @@
 
   <!-- Project Completed -->
   <section>
-    <h2 class="list__header">Projects Completed</h2>
+    <h2 class="list__header2">Projects Completed</h2>
     <div class="list__single">
-      <li draggable="true">
+      <li draggable="true" class="list__ul">
         <h3 class="list__title"></h3>
         <p class="list__description"></p>
         <p class="list__team"></p>

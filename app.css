@@ -17,3 +17,157 @@ body{
   margin: 0;
 }
 
+li{
+  list-style: none;
+}
+
+.header{
+  background-color: #89A1EF;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.header__title{
+  font-size: 1.5rem;
+  margin: 0;
+  color: white;
+  text-align: center;
+}
+
+.project__form{
+  padding: 0 1rem;
+  border-bottom: 1px solid rgb(215, 215, 215);
+}
+
+.project__label{
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+#title, #description, #teams{
+  border-radius: 1rem;
+  padding: 0.5rem;
+  border: 1px solid rgb(160, 160, 160);
+  font-family: inherit;
+}
+
+#title:active, #description:active, #teams:active{
+  outline: 1px solid #00A5E0;
+}
+
+.project__title, .project__description, .project__group{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.project__button{
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 1.25rem;
+  border-style: none;
+  background-color: #89A1EF;
+  color: whitesmoke;
+  font-weight: 600;
+  margin: 0.5rem 0 1.5rem 0;
+}
+
+.project__button:hover{
+  background-color: #00A5E0;
+  transition-duration: 0.2s;
+}
+
+.project__button:active{
+  background-color: #EF9CDA;
+  transition-duration: 0.1s;
+}
+
+.list__header1, .list__header2{
+  padding: 1rem;
+  margin: 2rem 0 1.5rem 0;
+  text-align: center;
+  color: rgb(5, 0, 28);
+}
+
+.list__header1{
+  background-color: #32CBFF;
+}
+
+.list__header2{
+  background-color: #FECEF1;
+}
+
+.list__single{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+
+.list__ul{
+  text-align: center;
+  padding: 1rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  margin-bottom: 1.5rem;
+}
+
+/* For screen > 768px to 1280px */
+@media only screen and (min-width: 768px) {
+  .project__form{
+    padding: 1rem 2.5rem ;
+  }
+
+  .project__button{
+    display: flex;
+    justify-content: center;
+    width: 40%;
+  }
+
+  .project__buttoncontainer{
+    display: flex;
+    justify-content: center;
+  }
+
+  .list__single{
+    padding: 1rem 4rem;
+  }
+
+  .list__ul{
+    padding: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .list__title{
+    font-size: 1.5rem;
+  }
+
+  .list__description{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+  }
+
+}
+
+
+/* For screen > 1280*/
+@media only screen and (min-width: 1280px) {
+  .project__form {
+      padding: 1rem 10rem;
+  }
+
+  .project__button {
+    width: 25%;
+  }
+
+  .list__single {
+    padding: 1rem 16rem;
+  }
+
+  .list__description {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+}
