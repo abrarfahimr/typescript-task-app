@@ -12,6 +12,8 @@ export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement>{
     this.titleInputElement = this.element.querySelector('#title') as HTMLInputElement;
     this.descriptionInputElement = this.element.querySelector('#description') as HTMLTextAreaElement;
     this.teamInputElement = this.element.querySelector('#teams') as HTMLSelectElement;
+
+    this.configure();
   }
 
   configure() {
@@ -33,7 +35,7 @@ export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement>{
     const descriptionValidatable: Validation.Validatable = {
       value: enteredDescription,
       required: true,
-      minlength: 5
+      minLength: 5
     };
 
     if (

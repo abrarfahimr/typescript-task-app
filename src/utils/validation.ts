@@ -3,21 +3,21 @@
 export interface Validatable{
   value: string;
   required?: boolean;
-  minlength?: number;
-  maxlength?: number;
+  minLength?: number;
+  maxLength?: number;
 }
 
-export function validate(validatableInput: Validatable) {
+export function validate(valdatableInput: Validatable) {
   let isValid = true;
-  if (validatableInput.required) {
-    isValid = isValid && validatableInput.value.toString().trim().length !== 0;
-  }
-  if (validatableInput.minlength !== null && typeof validatableInput.value === 'string') {
-    isValid = isValid && validatableInput.value.length >= validatableInput.minlength!;
-  }
-  if (validatableInput.maxlength !== null && typeof validatableInput.value === 'string') {
-    isValid = isValid && validatableInput.value.length <= validatableInput.maxlength!;
-  }
+   if (valdatableInput.required) {
+      isValid = isValid && valdatableInput.value.toString().trim().length !== 0;
+    }
+    if (valdatableInput.minLength != null && typeof valdatableInput.value === 'string') {
+      isValid = isValid && valdatableInput.value.length >= valdatableInput.minLength;
+    }
+    if (valdatableInput.maxLength != null && typeof valdatableInput.value === 'string') {
+      isValid = isValid && valdatableInput.value.length <= valdatableInput.maxLength;
+    }
 
   return isValid;
 }
