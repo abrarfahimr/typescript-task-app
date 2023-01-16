@@ -13,7 +13,7 @@
   </header>
 
   <!-- Project input -->
-  <main class="project">
+  <template class="project" id="project">
     <form class="project__form">
       <div class="project__title">
         <label for="title" class="project__label">Title</label>
@@ -25,7 +25,7 @@
       </div>
       <div class="project__group">
         <label for="teams" class="project__label">Teams</label>
-        <select id="teams" name="Teams">
+        <select id="teams" name="teams">
           <option value="Brian's SWE Team">Brian's SWE Team</option>
           <option value="John's UX Team">John's UX Team</option>
           <option value="Adam's Marketing Team">Adam's Marketing Team</option>
@@ -35,24 +35,23 @@
       <div class="project__buttoncontainer">
         <button type="submit" class="project__button">Add Project</button>
       </div>
-     
     </form>
-  </main>
+  </template>
 
   <!-- Project list -->
-  <section class="list">
+  <template id="list">
     <h2 class="list__header1">Project List</h2>
-    <template class="list__single">
+    <div class="list__single">
       <li draggable="true" class="list__ul">
         <h3 class="list__title"></h3>
         <p class="list__description"></p>
         <p class="list__team"></p>
       </li>
-    </template>
-  </section>
+    </div>
+  </template>
 
   <!-- Project Completed -->
-  <section>
+  <!-- <template>
     <h2 class="list__header2">Projects Completed</h2>
     <template class="list__single">
       <li draggable="true" class="list__ul">
@@ -61,7 +60,8 @@
         <p class="list__team"></p>
       </li>
     </template>
-  </section>
+  </template> -->
+
   <div id="app"></div>
 </body>
 </html>
