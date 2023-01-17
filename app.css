@@ -119,6 +119,11 @@ ul{
   margin: 0 1rem 1.5rem 1rem;
 }
 
+.list__drop{
+  background: white;
+}
+
+
 /* For screen > 768px to 1280px */
 @media only screen and (min-width: 768px) {
   .project__form{
