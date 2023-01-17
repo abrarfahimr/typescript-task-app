@@ -53,7 +53,7 @@ export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement>{
   private clearInputs() {
     this.titleInputElement.value = '';
     this.descriptionInputElement.value = '';
-    this.teamInputElement.value = '';
+    this.teamInputElement.value = "Brian's SWE Team";
   }
 
   @Autobind
