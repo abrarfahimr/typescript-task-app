@@ -1,6 +1,7 @@
 import Component from './base-component';
 import { autobind as Autobind } from '../decorators/autobind';
 import * as Validation from '../utils/validation';
+import { projectState } from '../states/project-state';
 
 export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement>{
   titleInputElement: HTMLInputElement;
@@ -61,7 +62,7 @@ export class ProjectInput extends Component<HTMLDivElement, HTMLFormElement>{
     const userInput = this.gatherUserInput();
     if (Array.isArray(userInput)) {
       const [title, desc, team] = userInput;
-      console.log([title, desc, team]); // for testing
+      projectState.addProject(title, desc, team);
       this.clearInputs();
     }
   }
